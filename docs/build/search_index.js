@@ -1,3 +1,3 @@
 var documenterSearchIndex = {"docs":
-[{"location":"","page":"Index","title":"Index","text":"yyyymmdd2yyyy(d)","category":"page"}]
+[{"location":"","page":"Index","title":"Index","text":"Modules = [DateUtils]","category":"page"},{"location":"#DateUtils.yearmonth2date","page":"Index","title":"DateUtils.yearmonth2date","text":"convert something like 2018-11 into year month dlm defines the string delimiter characters passed to split()\n\n\n\n\n\n","category":"function"},{"location":"#DateUtils.yearqtr2date","page":"Index","title":"DateUtils.yearqtr2date","text":"convert something like 2018-Q3 into end of quarter date dlm defines the string delimiter characters passed to split()\n\n\n\n\n\n","category":"function"}]
 }

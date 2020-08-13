@@ -1,3 +1,3 @@
-```@docs
-yyyymmdd2yyyy(d)
+```@autodocs
+Modules = [DateUtils]
 ```
