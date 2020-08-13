@@ -1,5 +1,5 @@
 """
-yyyymmdd2yyyy(d)
+    yyyymmdd2yyyy(d)
 
 Takes an Int64-formatted date and returns the year in Int64 format.
 ```@example
@@ -10,7 +10,7 @@ dt = 20100811
 yyyymmdd2yyyy(d) = div(d,10000)
 
 """
-yyyymmdd2yyyymm(d)
+    yyyymmdd2yyyymm(d)
 
 Takes an Int64-formatted date and returns the year and month in Int64 format.
 ```@example
@@ -21,7 +21,7 @@ dt = 20110909
 yyyymmdd2yyyymm(d) = div(d,100)
 
 """
-yyyymmdd2date(yyyymmdd::Number)
+    yyyymmdd2date(yyyymmdd::Number)
 
 Takes in an Int-64 formatted date and returns a Date object in y-m-d format.
 ```@example
@@ -37,7 +37,7 @@ function yyyymmdd2date(yyyymmdd::Number)
 end
 
 """
-yyyymm2date(yyyymm::Number)
+    yyyymm2date(yyyymm::Number)
 
 Takes in a Int64-formatted year and date and returns a Date object,
 with the last day of the month attached.
@@ -56,7 +56,7 @@ end
 
 const dduuuyyyydateformat = Dates.DateFormat("dduuuyyyy")
 """
-dduuuyyyy2date(dduuuyyyy)
+    dduuuyyyy2date(dduuuyyyy)
 
 Takes in a string of the form "31Jan1997" and returns a Date
 object in the format y-m-d.
@@ -71,7 +71,7 @@ end
 
 const uuuddyyyydateformat = Dates.DateFormat("uuu dd, yyyy")
 """
-uuuddyyyy2date(uuuddyyyy)
+    uuuddyyyy2date(uuuddyyyy)
 
 Takes in a string of the form "Month Day, Year" and returns a Date in the
 format y-m-d
@@ -85,7 +85,7 @@ function uuuddyyyy2date(uuuddyyyy)
 end
 
 """
-datetimestring2datetime(str,datetimeformat)
+    datetimestring2datetime(str,datetimeformat)
 
 Takes in a string of the form "" and converts it to the user-specified
 DateTime format.
@@ -112,7 +112,7 @@ function datetimestring2datetime(str,datetimeformat)
 end
 
 """
-date2yyyymmdd(date)
+    date2yyyymmdd(date)
 
 Takes in a Date object and converts it back to Int64.
 ```@example
@@ -130,7 +130,7 @@ function date2yyyymmdd(date)
 end
 
 """
-date2yyyymm(date)
+    date2yyyymm(date)
 
 Takes in a Date object and transforms it back to Int64.
 ```@example
@@ -148,7 +148,7 @@ function date2yyyymm(date)
 end
 
 """
-date2yyyy(date)
+    date2yyyy(date)
 
 Takes in a Date object and returns the year as an Int64 type.
 ```@example
@@ -166,7 +166,7 @@ function date2yyyy(date)
 end
 
 """
-datetimestring2yyyymmdd(str,datetimeformat)
+    datetimestring2yyyymmdd(str,datetimeformat)
 
 Takes in a string and a DateTime format, converts the date back into Int64 type.
 ```@example
@@ -186,7 +186,7 @@ function datetimestring2yyyymmdd(str,datetimeformat)
 end
 
 """
-date2yyyyqq(d)
+    date2yyyyqq(d)
 
 Takes in a Date object, formatted as y-m-d, and returns the year and quarter in Int64 type.
 ```@example
@@ -204,7 +204,7 @@ function date2yyyyqq(d)
 end
 
 """
-date2yyyyww(d)
+    date2yyyyww(d)
 
 Takes in a Date object, formatted as y-m-d, and returns the year and
 week in Int64 format.
@@ -224,7 +224,7 @@ function date2yyyyww(d)
 end
 
 """
-yearqtr2date(s, dlm="-Q")
+    yearqtr2date(s, dlm="-Q")
 
 convert something like 2018-Q3 into end of quarter date
 `dlm` defines the string delimiter characters passed to split()
@@ -237,7 +237,7 @@ function yearqtr2date(s, dlm="-Q")
 end
 
 """
-yearmonth2date(s, dlm="-")
+    yearmonth2date(s, dlm="-")
 
 convert something like 2018-11 into year month
 `dlm` defines the string delimiter characters passed to split()
